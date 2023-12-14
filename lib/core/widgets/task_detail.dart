@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:task_management/core/models/category_model.dart';
 import 'package:task_management/core/widgets/category_provider.dart';
 import 'package:task_management/core/widgets/task_provider.dart';
-import '../../main.dart';
 import '../../task_list.dart';
 import '../models/task_model.dart';
 
@@ -287,18 +285,8 @@ class _TaskDetailsPageState extends State<TaskDetailsPage> {
     );
   }
   Future<void> validate_date(BuildContext context, DateTime datePicked, DateTime dateOnly) async {
-    // final DateTime currentDate = DateTime.now();
-    // DateTime dateOnly = DateTime(currentDate.year, currentDate.month, currentDate.day,);
-    //
-    // final DateTime? datePicked = await showDatePicker(
-    //   context: context,
-    //   initialDate: DateTime.now(),
-    //   firstDate: dateOnly,
-    //   lastDate: DateTime(2024),
-    // );
     if (datePicked != null && datePicked != selectedDate) {
       if (datePicked == dateOnly || datePicked.isAfter(dateOnly)) {
-        //await _selectTime(context, datePicked);
         setState(() {
           selectedDate = datePicked;
         });

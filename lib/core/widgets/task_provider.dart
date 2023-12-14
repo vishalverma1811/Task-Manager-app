@@ -48,8 +48,6 @@ class TaskProvider with ChangeNotifier {
   Future<void> deleteTask(int index) async {
     try {
       await tasksBox.deleteAt(index);
-      // await tasksBox.close();
-      // tasksBox = await Hive.openBox<Task>('Tasks');
       await loadTasks();
     } catch (error) {
       print('Error deleting task: $error');
