@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "150631399785",
+    "project_id": "credex-task-manager",
+    "storage_bucket": "credex-task-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150631399785:android:f7528ab566a31dfc7b3df8",
+        "android_client_info": {
+          "package_name": "com.example.taskmanagement.task_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6DVHvsMkHUleSWhkCRzn3ActyZHoj16U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
